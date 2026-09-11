@@ -1,72 +1,88 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Matchr",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4F75FF",
+    "light": "#708FFF",
+    "dark": "#0037FF"
   },
-  "favicon": "/favicon.svg",
+  "fonts": {
+    "family": "Inter",
+    "heading": {
+      "family": "Fraunces"
+    }
+  },
+  "favicon": "/favicon.png",
   "navigation": {
     "pages": [
       {
         "group": "Getting Started",
         "pages": [
           "index",
-          "quickstart"
+          "getting-started/install-the-extension",
+          "getting-started/connect-and-upload"
+        ]
+      },
+      {
+        "group": "Using Matchr",
+        "pages": [
+          "using-matchr/how-scoring-works",
+          "using-matchr/match-history",
+          "using-matchr/switching-resumes"
+        ]
+      },
+      {
+        "group": "Resume Optimizer",
+        "pages": [
+          "optimizer/overview",
+          "optimizer/walkthrough"
+        ]
+      },
+      {
+        "group": "Plans & Credits",
+        "pages": [
+          "plans/plans-and-pricing",
+          "plans/how-credits-work"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "faq",
+          "changelog"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
+    "href": "https://matchr.in"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Sign in",
+        "href": "https://matchr.in/sign-in"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Get started",
+      "href": "https://matchr.in/sign-up"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "links": [
+      {
+        "header": "Matchr",
+        "items": [
+          { "label": "Dashboard", "href": "https://matchr.in" },
+          { "label": "Privacy Policy", "href": "https://matchr.in/privacy" },
+          { "label": "Terms of Service", "href": "https://matchr.in/terms" }
+        ]
+      }
+    ]
   }
 }
